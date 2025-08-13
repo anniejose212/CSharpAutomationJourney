@@ -1,3 +1,9 @@
+
+---
+layout: default
+
+---
+
 # Lesson 1 — Key Takeaways (Setup & First Console Program)
 
 **Date:** 13 Aug 2025  
