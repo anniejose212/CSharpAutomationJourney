@@ -1,6 +1,9 @@
 
 ---
 layout: default
+title:  "Welcome to Csharp Automation journey"
+date:   2025-08-06 12:00:00 +1000
+categories: programming
 
 ---
 
