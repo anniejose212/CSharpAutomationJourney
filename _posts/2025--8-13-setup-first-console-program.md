@@ -132,22 +132,14 @@ git push -u origin main
 
 ## 6) Practice tasks (expand your skills)
 
-- **Prompt + greet** (done): Ask for name, greet with `"Hello, <name>!"`.
-- **Add age**: Ask for age and print `age + 5` safely:
-  ```csharp
-  Console.Write("Enter your age: ");
-  string ageText = Console.ReadLine();
-  if (int.TryParse(ageText, out int age))
-  {
-      Console.WriteLine("In 5 years you will be: " + (age + 5));
-  }
-  else
-  {
-      Console.WriteLine("That doesn't look like a valid number.");
-  }
-  ```
-- **Sum of two numbers**: Prompt for two integers and print their sum.
-- **Commit after each change**: Small, descriptive commits help your learning journal.
+Write a program that displays this exact format:
+
+My Name: [Your Name]
+Learning Goal: [Your Goal]
+Motivation Level: 100%
+
+
+(Replace the text in brackets with your own values — still hardcoded for now.)
 
 ---
 
@@ -165,9 +157,20 @@ Solution (.sln)
 - `Console` → basic I/O for console apps.
 
 ---
+## 8) Key Takeaways from Today
 
-## 8) What’s next (Lesson 2 teaser)
+- Every C# program must have a Main method — it’s the entry point for execution.
+- Console.WriteLine(...) is for printing with a newline; Console.Write(...) keeps the cursor on the same line.
+- String concatenation ("Hello, " + name) and string interpolation ($"Hello, {name}") both work — interpolation is cleaner for longer text.
+- Case sensitivity matters — Console and console are not the same.
+- Parentheses after methods are mandatory — Console.WriteLine("text") works, Console.WriteLine = "text"; causes errors.
+- Initialize variables immediately to avoid null warnings in modern C# (nullable reference types).
+- Keep your using directives relevant — unused namespaces can be removed for cleaner code.
+- When adding extra methods (like PrintProfile), put them inside the class but outside Main so they’re reusable.
+- For now, avoid ReadLine() and Parse() if focusing on core syntax — hardcode values to reduce complexity early on.
+- A clean project structure + small, descriptive Git commits will make it easier to track your learning progress.
+
+---
+## 9) What’s next (Lesson 2 teaser)
 - Variables & data types
-- Converting strings to numbers (`int.Parse` vs `int.TryParse`)
-- Basic arithmetic & string interpolation (`$"Hello {name}"`)
 - Tiny exercises + a short quiz
